@@ -30,8 +30,8 @@ func FixturePath(name string, args ...string) string {
 	return filepath.Join("test", "fixtures", name)
 }
 
-// Fixture returns content of the given fixture
-func Fixture(t *testing.T, name string, args ...string) []byte {
+// FixtureBytes returns content bytes of the given fixture
+func FixtureBytes(t *testing.T, name string, args ...string) []byte {
 	path := FixturePath(name, args...)
 	bytes, err := ioutil.ReadFile(path) // #nosec
 	if err != nil {
