@@ -39,3 +39,8 @@ func Fixture(t *testing.T, name string, args ...string) []byte {
 	}
 	return bytes
 }
+
+// FixtureReader returns io reader of the given fixture
+func FixtureReader(t *testing.T, name string, args ...string) *strings.Reader {
+	return strings.NewReader(string(FixtureBytes(t, name, args...)))
+}
