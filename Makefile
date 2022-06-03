@@ -1,20 +1,12 @@
-tidy:
-	@echo ">> Tidying..."
-	@go mod tidy
-
-fmt:
-	@echo ">> Formatting..."
-	@go fmt ./...
-
-vet:
-	@echo ">> Vetting..."
-	@go vet ./...
-
 lint:
 	@echo ">> Running revive..."
 	@revive -config .revive.toml -formatter friendly ./...
 	@echo ">> Running staticcheck..."
 	@staticcheck ./...
+
+vet:
+	@echo ">> Vetting..."
+	@go vet ./...
 
 sec:
 	@echo ">> Auditing..."
