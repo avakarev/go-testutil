@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   test:
-    name: Run CI on Go ${{ matrix.go }}
+    name: using go ${{ matrix.go }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
