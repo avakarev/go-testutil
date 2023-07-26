@@ -2,6 +2,10 @@
 
 > Utilities around cmp to help testing go code
 
+# NOTE: deprecated, merged into https://github.com/avakarev/go-util
+> Scheduled for deletion after 2023-09-01
+
+
 ## Install
 
 ```shell
